@@ -4,11 +4,13 @@ Using SQL, Postgres, and pgAdmin to analyze employee data for upcoming retiremen
 
 ## Overview of Project
 
-An analysis of employee data tables to provide insight into upcoming retirements and which employees are eligible for the retirement package. 
+An analysis of employee data tables to provide insight into upcoming retirements and which employees are eligible for the retirement package. Additionally, which employees are eligible for the mentorship program. 
 
 ### Purpose
 
-Pewlett Hackard is a large company that employs thousands of people. As baby boomers are beginning to retire at a rapid rate, Pewlett Hackard needs to start planning for retirement packages and replacing the retiring employees in the near future. The number of retirements will leave thousands of open positions. Questions posed to analyst are: 
+Pewlett Hackard is a large company that employs thousands of people. As baby boomers are beginning to retire at a rapid rate, Pewlett Hackard needs to start planning for retirement packages and replacing the retiring employees in the near future. The number of retirements will leave thousands of open positions. 
+
+Questions posed to analyst are: 
 - Who will be retiring in the next few years?
 - How many positions will Pewlett Hackard need to fill?
 - How many retirees per department?
@@ -20,15 +22,16 @@ Pewlett Hackard is a large company that employs thousands of people. As baby boo
 The silver tsunami is going to impact Pewlett Hackard in a major way. Analysis of employee data indicates there are 72,458 employees that are about to retire in the near future.
 
 The retiring employees are spread across the company in all departments. 
-- The largest number of employees retiring, 9281, are in the Development department.
-- The second largest number of employees retiring, 8174, are in the Production department.
+- The largest number of employees retiring, 9,281, are in the Development department.
+- The second largest number of employees retiring, 8,174, are in the Production department.
+
 While all departments are cruicial to running a business, mass retiring in these two departments could significantly impact future output and earnings.
 
 ![retirement_count_names](https://user-images.githubusercontent.com/108373151/185764825-f6c253ae-71b6-4dc0-a7c9-e0ba92171d6a.png)
 
 After grouping the data by most recent title, the following information is noted:
 - The majority of employees (about 70%) retiring have Senior titles, which is to be expected as those employees have likely been at the company the longest and probably have received several promotions over the years. 
-- Two more managers are about to retire. In other analysis, it was determined that there are only 5 active managers for 9 departments (list of managers found at this link: [manager_info.csv](Data/manager_info.csv)). After 2 more retire, the company will be even more deficient in this position.
+- Two more managers are about to retire. In other analysis, it was determined that there are only 5 active managers for 9 departments (list of active managers found at this link: [manager_info.csv](Data/manager_info.csv)). After 2 more retire, the company will be even more deficient in this position.
 
 ![retiring_titles](https://user-images.githubusercontent.com/108373151/185764416-598a6e01-98cb-48fa-a382-d0649532a87b.png)
 
@@ -50,12 +53,12 @@ With 72,458 employees set to retire in the near future, the impact of the silver
 
 Continue to analyze the mentorship eligibility program with the following recommendations: 
 - Expanding the birthday year coverage to 5 years (1960-1965) would ensure a larger pool of mentorship-eligible employees. 
-- Since we have the hire date in the employees table, I would also include employees that have been working at the company for more than 10 years. 
+- Since the hire date exists in the employees table, include employees that have been working at the company for 10 or more years. 
 - Consider the current title of employees, maybe limiting mentors to senior positions.
 - Additionally, the table could be broken down into departments of available mentors, as well as their respective titles. 
 This further analysis would ensure there is sufficient coverage of qualified mentors in each department. 
 
 Additionally, it seems like there aren't enough managers for each department. This needs to be further analyzed to make sure each department within the company is sufficiently overseen. 
-- Find departments without active managers, including the 2 with managers that are ready to retire based on queries above..
+- Find departments without active managers, including the 2 with managers that are ready to retire based on queries above.
 - Find list of current employees within those departments.
 - Break employee list by department into current titles and length of employment.
